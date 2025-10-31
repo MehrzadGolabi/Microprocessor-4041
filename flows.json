@@ -1,0 +1,1246 @@
+[
+    {
+        "id": "b0b7e4d2f5a0c1aa",
+        "type": "tab",
+        "label": "CPU Temp Gauge",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "0e2cd19384cba9c7",
+        "type": "tab",
+        "label": "LED Control",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f9f0c1b1c8d74c10",
+        "type": "tab",
+        "label": "Slider",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e8a5f1c3d7b441fa",
+        "type": "tab",
+        "label": "MQTT Showcase",
+        "disabled": false,
+        "info": "One slider publishes to MQTT; all displays subscribe back. Includes LED set/state and LWT/Birth."
+    },
+    {
+        "id": "07a06fb2f702371f",
+        "type": "tab",
+        "label": "RGB LED",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dc3d525e2d252a25",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e5264221bc82156c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d4e3ff2135f374c4",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "dc3d525e2d252a25",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4288d9d05b2ec1e2",
+        "type": "ui_tab",
+        "name": "ColourPicker",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "351e09d6e839067d",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "4288d9d05b2ec1e2",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "grp2-dashboard",
+        "type": "ui_group",
+        "name": "Color Picker",
+        "tab": "4288d9d05b2ec1e2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f3a2a7c4e2d0c4b1",
+        "type": "ui_tab",
+        "name": "System-400249049",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e6d9a0a2c5b3d9f1",
+        "type": "ui_group",
+        "name": "CPU",
+        "tab": "f3a2a7c4e2d0c4b1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa75eacb3f4b52b9",
+        "type": "ui_tab",
+        "name": "Dashboard-400249049",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d27e7fcf139c46b6",
+        "type": "ui_group",
+        "name": "LED Control",
+        "tab": "aa75eacb3f4b52b9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c7dfb2d9a6c54f01",
+        "type": "ui_tab",
+        "name": "Showcase",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a3d7a0b0c9f34777",
+        "type": "ui_group",
+        "name": "Controls",
+        "tab": "aa75eacb3f4b52b9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f5f68ea3a4c94f0b",
+        "type": "ui_group",
+        "name": "Displays",
+        "tab": "c7dfb2d9a6c54f01",
+        "order": 2,
+        "disp": true,
+        "width": "18",
+        "collapse": false
+    },
+    {
+        "id": "4cf8e9a3b9b04b1d",
+        "type": "tls-config",
+        "name": "HiveMQ TLS",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "9a27c4b281a345c78080287932059853.s1.eu.hivemq.cloud:8883",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "c9b3f71e8b6e4a9e",
+        "type": "ui_tab",
+        "name": "MQTT Showcase",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1f3a2b4c5d6e7f80",
+        "type": "ui_group",
+        "name": "Controls",
+        "tab": "c9b3f71e8b6e4a9e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9ab8c7d6e5f4a321",
+        "type": "ui_group",
+        "name": "Displays",
+        "tab": "c9b3f71e8b6e4a9e",
+        "order": 2,
+        "disp": true,
+        "width": "18",
+        "collapse": false
+    },
+    {
+        "id": "6a2e8cb9a75ad7f3",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Cloud",
+        "broker": "9a27c4b281a345c78080287932059853.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "4cf8e9a3b9b04b1d",
+        "clientid": "nodered-showcase-{{{random}}}",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "showcase/nodered/status",
+        "birthQos": "1",
+        "birthPayload": "online",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "showcase/nodered/status",
+        "willQos": "1",
+        "willPayload": "offline",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5a9ec5a2d2c3d0ab",
+        "type": "inject",
+        "z": "b0b7e4d2f5a0c1aa",
+        "name": "Every 5s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "2f0f2a6f1b4a4a37"
+            ]
+        ]
+    },
+    {
+        "id": "2f0f2a6f1b4a4a37",
+        "type": "file in",
+        "z": "b0b7e4d2f5a0c1aa",
+        "name": "Read /sys temp",
+        "filename": "/sys/class/thermal/thermal_zone0/temp",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "4dbb2a1e3a9a6f22"
+            ]
+        ]
+    },
+    {
+        "id": "4dbb2a1e3a9a6f22",
+        "type": "function",
+        "z": "b0b7e4d2f5a0c1aa",
+        "name": "To °C (one decimal)",
+        "func": "let raw = (msg.payload||\"\").toString().trim();\nlet val;\nif (/^\\d+$/.test(raw)) {\n    val = parseInt(raw,10) / 1000;\n} else {\n    const m = raw.match(/([0-9]+(\\.[0-9]+)?)/);\n    val = m ? parseFloat(m[1]) : NaN;\n}\nmsg.payload = isFinite(val) ? Number(val.toFixed(1)) : null;\nmsg.topic = \"CPU Temperature\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 120,
+        "wires": [
+            [
+                "a9b8f2f1e4d0c2aa",
+                "6f34c0a1d9efb2a0"
+            ]
+        ]
+    },
+    {
+        "id": "a9b8f2f1e4d0c2aa",
+        "type": "ui_gauge",
+        "z": "b0b7e4d2f5a0c1aa",
+        "name": "CPU Temp",
+        "group": "e6d9a0a2c5b3d9f1",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "CPU Temp",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 20,
+        "max": 100,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "70",
+        "seg2": "85",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6f34c0a1d9efb2a0",
+        "type": "debug",
+        "z": "b0b7e4d2f5a0c1aa",
+        "name": "Debug (°C)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1e1ab8168d64bbad",
+        "type": "ui_button",
+        "z": "0e2cd19384cba9c7",
+        "name": "LED ON",
+        "group": "d27e7fcf139c46b6",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "LED ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "c8c37e03dd7c669b"
+            ]
+        ]
+    },
+    {
+        "id": "9c8b1b0aa0a057fb",
+        "type": "ui_button",
+        "z": "0e2cd19384cba9c7",
+        "name": "LED OFF",
+        "group": "d27e7fcf139c46b6",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "LED OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "c8c37e03dd7c669b"
+            ]
+        ]
+    },
+    {
+        "id": "c8c37e03dd7c669b",
+        "type": "rpi-gpio out",
+        "z": "0e2cd19384cba9c7",
+        "name": "LED",
+        "pin": "4",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 430,
+        "y": 170,
+        "wires": []
+    },
+    {
+        "id": "b1c2c3d4e5f60718",
+        "type": "ui_slider",
+        "z": "f9f0c1b1c8d74c10",
+        "name": "Master Slider",
+        "label": "Value",
+        "tooltip": "Drag to drive all widgets",
+        "group": "a3d7a0b0c9f34777",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "value",
+        "topicType": "str",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "className": "",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "d2e3f4a5b6c7d8e9"
+            ]
+        ]
+    },
+    {
+        "id": "d2e3f4a5b6c7d8e9",
+        "type": "change",
+        "z": "f9f0c1b1c8d74c10",
+        "name": "Ensure number + topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Slider",
+                "tot": "str"
+            }
+        ],
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "f0a1b2c3d4e5f607",
+                "c0ffee1234abcd55",
+                "1a2b3c4d5e6f7081",
+                "aa11bb22cc33dd44"
+            ]
+        ]
+    },
+    {
+        "id": "f0a1b2c3d4e5f607",
+        "type": "ui_gauge",
+        "z": "f9f0c1b1c8d74c10",
+        "name": "Gauge (Classic)",
+        "group": "a3d7a0b0c9f34777",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Gauge (Classic)",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "85",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c0ffee1234abcd55",
+        "type": "ui_gauge",
+        "z": "f9f0c1b1c8d74c10",
+        "name": "Gauge (Donut)",
+        "group": "a3d7a0b0c9f34777",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Gauge (Donut)",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#007acc",
+            "#ffcc00",
+            "#cc3300"
+        ],
+        "seg1": "60",
+        "seg2": "85",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1a2b3c4d5e6f7081",
+        "type": "ui_text",
+        "z": "f9f0c1b1c8d74c10",
+        "group": "a3d7a0b0c9f34777",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "Text Readout",
+        "label": "Value",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 750,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "aa11bb22cc33dd44",
+        "type": "ui_chart",
+        "z": "f9f0c1b1c8d74c10",
+        "name": "History",
+        "group": "a3d7a0b0c9f34777",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "label": "Live Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Move the slider…",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2d1c0b9a8f7e6d5",
+        "type": "ui_slider",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "Master Slider",
+        "label": "Value",
+        "tooltip": "Drag to publish to MQTT",
+        "group": "1f3a2b4c5d6e7f80",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "x": 210,
+        "y": 280,
+        "wires": [
+            [
+                "b7c6d5e4f3a2b190"
+            ]
+        ]
+    },
+    {
+        "id": "b7c6d5e4f3a2b190",
+        "type": "change",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "to Number + add topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "showcase/value",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "retain",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "a1b2c3d4e5f60718"
+            ]
+        ]
+    },
+    {
+        "id": "a1b2c3d4e5f60718",
+        "type": "mqtt out",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "Publish value",
+        "topic": "",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6a2e8cb9a75ad7f3",
+        "x": 770,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f0e1d2c3b4a59687",
+        "type": "mqtt in",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "Subscribe value",
+        "topic": "showcase/value",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "6a2e8cb9a75ad7f3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1040,
+        "y": 280,
+        "wires": [
+            [
+                "d3c2b1a0e9f8d7c6"
+            ]
+        ]
+    },
+    {
+        "id": "d3c2b1a0e9f8d7c6",
+        "type": "change",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "ensure Number + topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Slider",
+                "tot": "str"
+            }
+        ],
+        "x": 1300,
+        "y": 280,
+        "wires": [
+            [
+                "1b2c3d4e5f6a7081",
+                "2c3d4e5f6a7b8192",
+                "4e5f6a7b8c9d0314",
+                "5f6a7b8c9d0e1425"
+            ]
+        ]
+    },
+    {
+        "id": "1b2c3d4e5f6a7081",
+        "type": "ui_gauge",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "Gauge (Classic)",
+        "group": "9ab8c7d6e5f4a321",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Gauge (Classic)",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "85",
+        "x": 1650,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2c3d4e5f6a7b8192",
+        "type": "ui_gauge",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "Gauge (Donut)",
+        "group": "9ab8c7d6e5f4a321",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Gauge (Donut)",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#007acc",
+            "#ffcc00",
+            "#cc3300"
+        ],
+        "seg1": "60",
+        "seg2": "85",
+        "x": 1650,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "4e5f6a7b8c9d0314",
+        "type": "ui_text",
+        "z": "e8a5f1c3d7b441fa",
+        "group": "9ab8c7d6e5f4a321",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "Text Readout",
+        "label": "Value",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1640,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5f6a7b8c9d0e1425",
+        "type": "ui_chart",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "Live Chart",
+        "group": "9ab8c7d6e5f4a321",
+        "order": 5,
+        "width": 18,
+        "height": 6,
+        "label": "Live Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Move the slider…",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c"
+        ],
+        "outputs": 1,
+        "x": 1640,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7b8c9d0e1f20314",
+        "type": "ui_button",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "LED ON",
+        "group": "1f3a2b4c5d6e7f80",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "LED ON",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 230,
+        "y": 350,
+        "wires": [
+            [
+                "c1d2e3f405162738"
+            ]
+        ]
+    },
+    {
+        "id": "b8c9d0e1f2031425",
+        "type": "ui_button",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "LED OFF",
+        "group": "1f3a2b4c5d6e7f80",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "LED OFF",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 230,
+        "y": 410,
+        "wires": [
+            [
+                "c1d2e3f405162738"
+            ]
+        ]
+    },
+    {
+        "id": "c1d2e3f405162738",
+        "type": "function",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "to topic showcase/led/set",
+        "func": "msg.topic = \"showcase/led/set\";\nmsg.retain = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "d8e9f0a1b2c3d4e5"
+            ]
+        ]
+    },
+    {
+        "id": "d8e9f0a1b2c3d4e5",
+        "type": "mqtt out",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "Publish LED set",
+        "topic": "",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6a2e8cb9a75ad7f3",
+        "x": 780,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e0f1a2b3c4d5e6f7",
+        "type": "mqtt in",
+        "z": "e8a5f1c3d7b441fa",
+        "name": "Subscribe LED state",
+        "topic": "showcase/led/state",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "6a2e8cb9a75ad7f3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1050,
+        "y": 380,
+        "wires": [
+            [
+                "f1e2d3c4b5a69788"
+            ]
+        ]
+    },
+    {
+        "id": "f1e2d3c4b5a69788",
+        "type": "ui_text",
+        "z": "e8a5f1c3d7b441fa",
+        "group": "9ab8c7d6e5f4a321",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "name": "LED State",
+        "label": "LED State",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1310,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "anode-cathode-2",
+        "type": "ui_switch",
+        "z": "07a06fb2f702371f",
+        "name": "Common Anode?",
+        "label": "Common Anode?",
+        "tooltip": "",
+        "group": "351e09d6e839067d",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "mode",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "ANODE",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "CATHODE",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 630,
+        "y": 400,
+        "wires": [
+            [
+                "store-mode-2"
+            ]
+        ]
+    },
+    {
+        "id": "store-mode-2",
+        "type": "change",
+        "z": "07a06fb2f702371f",
+        "name": "store mode in flow.mode2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mode2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 960,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "picker",
+        "type": "ui_colour_picker",
+        "z": "07a06fb2f702371f",
+        "name": "",
+        "label": "Pick a color",
+        "group": "351e09d6e839067d",
+        "format": "hex",
+        "outformat": "string",
+        "showSwatch": true,
+        "showPicker": true,
+        "showValue": true,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "order": 2,
+        "width": 6,
+        "height": 2,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 620,
+        "y": 460,
+        "wires": [
+            [
+                "hex-to-rgb"
+            ]
+        ]
+    },
+    {
+        "id": "hex-to-rgb",
+        "type": "function",
+        "z": "07a06fb2f702371f",
+        "name": "HEX → R,G,B → PWM%",
+        "func": "const mode = flow.get('mode2') || 'CATHODE';\nlet hex = String(msg.payload || '').trim();\nif (hex.startsWith('#')) hex = hex.slice(1);\nif (hex.length === 3) hex = hex.split('').map(c=>c+c).join('');\nconst r = parseInt(hex.slice(0,2),16);\nconst g = parseInt(hex.slice(2,4),16);\nconst b = parseInt(hex.slice(4,6),16);\nfunction toPWM(v){\n  let v255 = v;\n  if (mode === 'ANODE') v255 = 255 - v255;\n  return Math.round((v255/255)*100);\n}\nreturn [ {payload: toPWM(r)}, {payload: toPWM(g)}, {payload: toPWM(b)} ];",
+        "outputs": 3,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 460,
+        "wires": [
+            [
+                "gpio-r2",
+                "25e28310c92d651c"
+            ],
+            [
+                "gpio-g2",
+                "aaeee9c38b6faa5f"
+            ],
+            [
+                "gpio-b2",
+                "b2d9115af82719b1"
+            ]
+        ]
+    },
+    {
+        "id": "gpio-r2",
+        "type": "rpi-gpio out",
+        "z": "07a06fb2f702371f",
+        "name": "GPIO13 (PWM R)",
+        "pin": "13",
+        "set": false,
+        "level": "0",
+        "freq": "100",
+        "out": "pwm",
+        "bcm": true,
+        "x": 1410,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "gpio-g2",
+        "type": "rpi-gpio out",
+        "z": "07a06fb2f702371f",
+        "name": "GPIO19 (PWM G)",
+        "pin": "19",
+        "set": false,
+        "level": "0",
+        "freq": "100",
+        "out": "pwm",
+        "bcm": true,
+        "x": 1410,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "gpio-b2",
+        "type": "rpi-gpio out",
+        "z": "07a06fb2f702371f",
+        "name": "GPIO12 (PWM B)",
+        "pin": "12",
+        "set": false,
+        "level": "0",
+        "freq": "100",
+        "out": "pwm",
+        "bcm": true,
+        "x": 1410,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "25e28310c92d651c",
+        "type": "debug",
+        "z": "07a06fb2f702371f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "aaeee9c38b6faa5f",
+        "type": "debug",
+        "z": "07a06fb2f702371f",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "b2d9115af82719b1",
+        "type": "debug",
+        "z": "07a06fb2f702371f",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 680,
+        "wires": []
+    }
+]
